@@ -1,0 +1,9 @@
+
+docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 -e TZ=Europe/Amsterdam webgoat/webgoat
+SELECT * FROM user_data WHERE first_name = 'John' AND last_name = '	
+Smith
+
+or
+
+1 = 1
+'	
