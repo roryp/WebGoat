@@ -1,4 +1,11 @@
+/*
+ * SPDX-FileCopyrightText: Copyright © 2023 WebGoat authors
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
 package org.owasp.webgoat.lessons.jwt.claimmisuse;
+
+import static org.owasp.webgoat.container.assignments.AttackResultBuilder.failed;
+import static org.owasp.webgoat.container.assignments.AttackResultBuilder.success;
 
 import com.auth0.jwk.JwkException;
 import com.auth0.jwk.JwkProviderBuilder;
@@ -28,7 +35,7 @@ import org.springframework.web.bind.annotation.RestController;
   "jwt-jku-hint4",
   "jwt-jku-hint5"
 })
-public class JWTHeaderJKUEndpoint extends AssignmentEndpoint {
+public class JWTHeaderJKUEndpoint implements AssignmentEndpoint {
 
   @PostMapping("jku/follow/{user}")
   public @ResponseBody String follow(@PathVariable("user") String user) {
