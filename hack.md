@@ -32,16 +32,17 @@
 
 ---
 
-### 🎯 2) XSS Attack
+### 🎯 2) XSS Attack - ✅ LIVE TESTED
 
-**Navigate:** (A3) Injection → Cross Site Scripting
-**Payload:** `<script>alert('XSS')</script>`
+**Navigate:** Cross Site Scripting → Lesson 7 → Try It! Reflected XSS
+**Payload:** `<script>alert('XSS Attack!')</script>`
+**Result:** ✅ Successfully executed JavaScript alert demonstrating XSS vulnerability
 
 **Quick Steps:**
-1. Find any input field
-2. Enter: `<script>alert('XSS')</script>`
-3. Submit form
-4. ✅ Success: Alert popup appears
+1. Go to lesson 7 "Try It! Reflected XSS" (shopping cart form)
+2. In "Enter your credit card number" field, enter: `<script>alert('XSS Attack!')</script>`
+3. Click "Purchase" button
+4. ✅ Success: "XSS Attack!" alert dialog appears, lesson completed
 
 **Alternative payloads:**
 - `<img src=x onerror=alert('XSS')>`
@@ -204,12 +205,22 @@ mcp_playwright_browser_click: "Get Account Info" button
 ## 🚀 AUTOMATION DEMO
 
 **Playwright Browser Automation Successfully Executed:**
+
+**1. SQL Injection Attack ✅**
 1. ✅ Logged into WebGoat with adminrpza/adminrpza
 2. ✅ Navigated to SQL Injection lesson 9 "Try It! String SQL injection"
 3. ✅ Set dropdowns to: `Smith'` + `or` + `'1' = '1`
 4. ✅ Clicked "Get Account Info" button
 5. ✅ Received success message: "You have succeeded:"
 6. ✅ Extracted complete user database with 15+ records including credit card data
+
+**2. XSS Attack ✅**
+1. ✅ Logged into WebGoat with adminrpza/adminrpza
+2. ✅ Navigated to Cross Site Scripting lesson 7 "Try It! Reflected XSS"
+3. ✅ Injected payload in credit card field: `<script>alert('XSS Attack!')</script>`
+4. ✅ Clicked "Purchase" button
+5. ✅ XSS executed successfully: Alert dialog appeared with "XSS Attack!" message
+6. ✅ Lesson completed: "Congratulations, but alerts are not very impressive are they?"
 
 **Live Demo Query:** 
 ```sql
