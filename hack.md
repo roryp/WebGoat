@@ -12,6 +12,28 @@
 - **WebWolf:** http://127.0.0.1:9090/WebWolf
 - **Login:** adminrpza / adminrpza
 
+## 🤖 Playwright MCP Server Setup (Browser Automation)
+
+**Prerequisites:** VS Code with GitHub Copilot
+
+**Install Playwright MCP Extension:**
+1. Open VS Code Extensions (Ctrl+Shift+X)
+2. Search for "Playwright MCP" 
+3. Install the official Microsoft extension: `ms-playwright.playwright-mcp`
+4. Or install from: https://github.com/microsoft/playwright-mcp
+
+**Configure for GitHub Copilot:**
+1. Restart VS Code after installation
+2. Extension automatically integrates with GitHub Copilot
+3. No additional configuration needed
+
+**Test Installation:**
+- Use GitHub Copilot chat: "Navigate to WebGoat using browser automation"
+- Should show available Playwright MCP browser tools
+- Try: "Take a screenshot of the current page"
+
+**Note:** This VS Code extension enables GitHub Copilot to control browsers for live security testing as demonstrated in this guide.
+
 ## ✅ VERIFIED ATTACKS - READY TO USE
 
 ### 🎯 1) SQL Injection - ✅ LIVE TESTED
