@@ -161,7 +161,7 @@
 
 **✅ VERIFIED WORKING:**
 - [x] 🎯 **SQL Injection** - Lesson 9 dropdowns: `Smith'` + `or` + `'1' = '1` → "You have succeeded:" + All 15+ user records with credit cards exposed
-- [ ] 🎯 **XSS** - `<script>alert('XSS')</script>` → Alert popup
+- [x] 🎯 **XSS** - Lesson 7 credit card field: `<script>alert('XSS Attack!')</script>` → Alert popup + "Congratulations" message
 - [ ] 🎯 **CSRF** - Auto-submitting form via WebWolf
 - [ ] 🎯 **IDOR** - Parameter tampering to access other users
 - [ ] 🎯 **Session Hijacking** - Predicted session IDs
@@ -171,7 +171,7 @@
 - [ ] 🎯 **XXE** - XML external entity file extraction
 - [ ] 🎯 **DOM XSS** - Client-side JavaScript execution
 
-**🏆 COMPLETION: 1/10**
+**🏆 COMPLETION: 2/10**
 
 ## 🤖 BROWSER AUTOMATION STEPS
 
@@ -196,6 +196,18 @@ mcp_playwright_browser_select_option: First dropdown "Smith'"
 mcp_playwright_browser_select_option: Second dropdown "or" (already selected)
 mcp_playwright_browser_select_option: Third dropdown "'1' = '1"
 mcp_playwright_browser_click: "Get Account Info" button
+```
+
+### Step 4: Navigate to XSS Lesson 7
+```
+mcp_playwright_browser_navigate: http://127.0.0.1:8080/WebGoat/start.mvc#lesson/CrossSiteScripting.lesson/6
+```
+
+### Step 5: Execute XSS Attack - "Try It! Reflected XSS"
+```
+mcp_playwright_browser_type: Credit card number field "<script>alert('XSS Attack!')</script>"
+mcp_playwright_browser_click: "Purchase" button
+mcp_playwright_browser_handle_dialog: Accept alert dialog
 ```
 
 **Result:** ✅ "You have succeeded:" + Complete database dump with all user records including credit card data
