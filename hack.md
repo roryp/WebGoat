@@ -1,4 +1,15 @@
 # WebGoat Security Testing Guide ✅ LIVE TESTED
+## Problem 
+
+Modern developers rely increasingly on AI-driven code assistants like GitHub Copilot to boost productivity, but few understand how these same tools can be used by attackers to rapidly discover—and even exploit—serious security holes in real-world code. This presentation tackles a critical question: What happens when you let an AI loose on your own app’s codebase, using it not just to write features, but to actively hunt for vulnerabilities and weaponize them, all in minutes? With the rise in supply chain and AI-powered attacks, learning to think like both a developer and a hacker is more urgent than ever. 
+
+## Methodology 
+
+In this high-energy, live demonstration, I combine the intentionally vulnerable WebGoat application with GitHub Copilot in VS Code. I’ll guide the audience through a hands-on process: - Using Copilot to audit the codebase, prompting it to find dangerous patterns (like SQL injection, XSS, and command injection). - Letting Copilot suggest payloads and attacks, then executing these exploits live against my running instance of WebGoat. - Showcasing not only the vulnerabilities, but the real-world consequences—bypassing logins, dumping sensitive files, hijacking sessions, and more. - Wrapping up by using Copilot to rapidly patch the vulnerabilities, demonstrating how AI can be harnessed for both offense and defense. 
+
+## Conclusions 
+
+The result is eye-opening: AI can dramatically accelerate both the discovery and exploitation of critical security flaws, even for those with modest hacking experience. In my tests, Copilot was able to spot and weaponize vulnerabilities in seconds—sometimes even faster than seasoned security pros. Audience members will witness admin logins bypassed, site content hijacked, and sensitive files spilled with just a few keystrokes. ## Implications for Practitioners and Business For organizations and developers, this talk is a wake-up call: AI code assistants are double-edged swords. While they can help write and fix code, they can also be used by attackers—or even well-meaning developers—to expose devastating security risks at scale. Practitioners will leave with actionable strategies for using Copilot (and similar tools) to proactively audit their own codebases, build security into their workflows, and avoid becoming tomorrow’s headline. This is essential knowledge for anyone building or securing software in the AI era.
 
 ## 🚀 Quick Setup (2 minutes)
 
