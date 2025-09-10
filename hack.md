@@ -9,7 +9,11 @@ In this high-energy, live demonstration, I combine the intentionally vulnerable 
 
 ## Conclusions 
 
-The result is eye-opening: AI can dramatically accelerate both the discovery and exploitation of critical security flaws, even for those with modest hacking experience. In my tests, Copilot was able to spot and weaponize vulnerabilities in seconds—sometimes even faster than seasoned security pros. Audience members will witness admin logins bypassed, site content hijacked, and sensitive files spilled with just a few keystrokes. ## Implications for Practitioners and Business For organizations and developers, this talk is a wake-up call: AI code assistants are double-edged swords. While they can help write and fix code, they can also be used by attackers—or even well-meaning developers—to expose devastating security risks at scale. Practitioners will leave with actionable strategies for using Copilot (and similar tools) to proactively audit their own codebases, build security into their workflows, and avoid becoming tomorrow’s headline. This is essential knowledge for anyone building or securing software in the AI era.
+The result is eye-opening: AI can dramatically accelerate both the discovery and exploitation of critical security flaws, even for those with modest hacking experience. In my tests, Copilot was able to spot and weaponize vulnerabilities in seconds—sometimes even faster than seasoned security pros. Audience members will witness admin logins bypassed, site content hijacked, and sensitive files spilled with just a few keystrokes.
+
+## Implications for Practitioners and Business
+
+For organizations and developers, this talk is a wake-up call: AI code assistants are double-edged swords. While they can help write and fix code, they can also be used by attackers—or even well-meaning developers—to expose devastating security risks at scale. Practitioners will leave with actionable strategies for using Copilot (and similar tools) to proactively audit their own codebases, build security into their workflows, and avoid becoming tomorrow’s headline. This is essential knowledge for anyone building or securing software in the AI era.
 
 ## 🚀 Quick Setup (2 minutes)
 
